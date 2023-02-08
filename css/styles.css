@@ -1,0 +1,258 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--main-text-color);
+    margin: 0;
+    
+}
+/*  цвет основного текста #2E2F42;*/
+
+/* вторичный цвет текста  #434455;*/
+
+/* белый #FFFFFF;*/
+
+/* акцент #4D5AE5;*/
+
+/* вторичный цвет фона */
+
+:root {
+    --main-text-color: #2E2F42;
+    --second-text-color: #434455;
+    --main-bg-color: #FFFFFF;
+    --second-bg-color: #E5E5E5;
+    --btn-bg-color: #F4F4FD;
+    --btn-bg-color-aktiv: #404BBF;
+    --btn-text-color: #4D5AE5;
+    --btn-text-color-aktiv: #FFFFFF;
+
+     }
+/* сайт nav */
+
+.logotype { 
+color: var(--btn-text-color)
+}
+
+.logo {
+text-decoration: none;   
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--main-text-color);
+}
+
+.list {
+list-style: none;
+text-decoration: none;
+}
+.site-nav .link.current,
+.site-nav .link:hover,
+.site-nav .link:focus {
+color: var(--btn-bg-color-aktiv);
+}
+.link {
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-text-color);
+}
+
+.list-contact,
+.contact-list {
+text-decoration: none;
+list-style: none;
+font-style: normal;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--second-text-color);
+
+}
+.contact-list:is(:hover, :focus) {
+color: var(--btn-bg-color-aktiv);
+
+} 
+
+/* Сeкция HERO */
+
+.hero-section {
+background-color: var(--main-text-color);
+}
+.hero-title {
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+letter-spacing: 0.02em;
+color: var(--main-bg-color);
+}
+.hero-btn:is(:hover, :focus) {
+background-color: var(--btn-bg-color-aktiv)
+}
+
+.hero-btn {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color:var(--btn-text-color-aktiv);
+background-color: var(--btn-text-color);
+cursor: pointer;
+}
+/* Секция преимуществ */
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--main-text-color);
+}
+.text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--second-text-color); 
+}
+/* Секция work */
+
+.title-work {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--main-text-color)
+}
+
+/* Секция team */
+
+.section-team {
+background: var(--btn-bg-color);
+}
+.title-team {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--main-text-color)
+}
+
+.title-person {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--main-text-color)
+}
+.text-team {
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--second-text-color)
+}
+
+/* Секция footer */
+
+.footer {
+background: var(--main-text-color)
+
+}
+.logo-footer {
+font-family: 'Raleway';
+font-weight: 800;
+font-size: 18px;
+line-height: 1.11;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-decoration: none;
+color: #F4F4FD;
+
+}
+
+.logo-light{
+    color: #F4F4FD;
+}
+.text-footer {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #E7E9FC;
+}
+
+/* Портфолио */
+
+.btn-filtr {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: var(--btn-text-color);
+cursor: pointer;
+
+}
+.btn-filtr:hover,
+.btn-filtr:focus {
+color: var(--btn-text-color-aktiv);
+background-color: var(--btn-bg-color-aktiv);
+}
+
+/* Секция project */
+
+.link-project {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+text-decoration: none;
+letter-spacing: 0.02em;
+color: var(--main-text-color)
+    
+}
+
+.title-project {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+
+}
+.text-project {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--second-text-color);
+
+}
